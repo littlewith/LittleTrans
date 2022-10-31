@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小和的文件分享服务器</title>
+  <script src="../static/js/jquery-3.6.1.min.js"></script>
+  <script src="../static/js/bootstrap.bundle.js"></script>
+  <script src="../static/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../static/css/bootstrap.css"/>
+  <link rel="stylesheet" href="../static/css/bootstrap-grid.css"/>
+  <link rel="stylesheet" href="../static/css/bootstrap-reboot.css"/>
+</head>
+<body>
+<div class="container p-3">
+  <h1 class="border border-success fs-3 bg-primary p-3 rounded-pill text-center">
+    <span class="text-white">欢迎使用Little-upload！</span>
+  </h1>
+  <br>
+  <div class="container bg-primary rounded-pill col">
+
+        <div class="text-white fs-4 text-center">
+        请选择:
+        </div>
+        <button class="btn btn-warning col-3 offset-1 active" onclick="upto1()">
+          我要上传
+        </button>
+        <button class="btn btn-warning col-3 offset-4 active" onclick="upto2()">
+          我要下载
+        </button>
+    <span class="p-1"><br></span>
+  </div>
+
+
+</div>
+<script type="text/javascript">
+    function upto1(){
+        window.location.href="./up.php";
+    }
+    function upto2(){
+        window.location.href="./down.php";
+    }
+</script>
+</body>
+</html>
